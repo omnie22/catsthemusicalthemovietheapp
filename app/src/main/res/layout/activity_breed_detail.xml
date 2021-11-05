@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/beeg_cat"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/purple_200" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:id="@+id/scroll1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beeg_cat"
+        app:layout_constraintEnd_toStartOf="@+id/scroll2"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stuff1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat name"
+
+        app:layout_constraintBottom_toTopOf="@id/cfa_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beeg_cat" />
+
+    <TextView
+        android:id="@+id/cfa_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cfa_view"
+        app:layout_constraintBottom_toTopOf="@+id/vetstreet_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_view" />
+    <TextView
+        android:id="@+id/vetstreet_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cfa_view"
+        app:layout_constraintBottom_toTopOf="@id/vca_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cfa_view" />
+    <TextView
+        android:id="@+id/vca_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintBottom_toTopOf="@id/temperment_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vetstreet_view" />
+
+    <TextView
+        android:id="@+id/temperment_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/vca_view"
+        app:layout_constraintBottom_toTopOf="@id/origin_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/origin_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/temperment_view"
+        app:layout_constraintBottom_toTopOf="@id/country_code_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/country_code_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/origin_view"
+        app:layout_constraintBottom_toTopOf="@id/description_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/description_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/country_code_view"
+        app:layout_constraintBottom_toTopOf="@id/lifespan_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/lifespan_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/description_view"
+        app:layout_constraintBottom_toTopOf="@id/indoor_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/indoor_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/lifespan_view"
+        app:layout_constraintBottom_toTopOf="@id/lap_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/lap_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/indoor_view"
+        app:layout_constraintBottom_toTopOf="@id/alt_names_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/alt_names_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/lap_view"
+        app:layout_constraintBottom_toTopOf="@id/adaptability_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/adaptability_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/alt_names_view"
+        app:layout_constraintBottom_toTopOf="@id/affection_level_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/affection_level_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/adaptability_view"
+        app:layout_constraintBottom_toTopOf="@id/child_friendly_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/child_friendly_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vca_view"
+        app:layout_constraintTop_toBottomOf="@id/affection_level_view"
+        app:layout_constraintBottom_toTopOf="@id/dog_friendly_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:id="@+id/scroll2"
+        app:layout_constraintStart_toEndOf="@id/scroll1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beeg_cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/stuff2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dog_friendly_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/child_friendly_view"
+            app:layout_constraintBottom_toTopOf="@id/energy_level_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/energy_level_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/dog_friendly_view"
+            app:layout_constraintBottom_toTopOf="@id/grooming_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/grooming_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/energy_level_view"
+            app:layout_constraintBottom_toTopOf="@id/health_issues_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/health_issues_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/grooming_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/intelligence_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/beeg_cat"
+            app:layout_constraintBottom_toTopOf="@id/shedding_level_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/shedding_level_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/social_needs_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/stranger_friendly_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/vocalisation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/experimental_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/hairless_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/natural_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/rare_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/rex_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/suppressed_tail_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/short_legs_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/wikipedia_url_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/hypoallergenic_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vca_view"
+            app:layout_constraintTop_toBottomOf="@id/intelligence_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
