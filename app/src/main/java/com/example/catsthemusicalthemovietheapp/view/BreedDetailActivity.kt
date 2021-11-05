@@ -16,41 +16,39 @@ class BreedDetailActivity : AppCompatActivity() {
 //        img
         if (cat != null) {
             binding.beegCat.loadUrl(cat.image?.url.toString())
-            binding.nameView.text = "Name: " + cat.name
+            binding.nameView.text = cat.name
             binding.cfaView.text = "CFA url: " + cat.cfaUrl
             binding.vetstreetView.text = "Vetstreet url: " + cat.vetstreetUrl
             binding.vcaView.text = "VCA hospitals url: " + cat.vcahospitalsUrl
             binding.tempermentView.text = "Temperment: " + cat.temperament
             binding.originView.text = "Origin: " + cat.origin
             binding.countryCodeView.text = "CountryCode: " + cat.countryCode
-            binding.descriptionView.text = "Description: " + cat.description
+            binding.descriptionView.text = cat.description
             binding.lifespanView.text = "Lifespan: " +cat.lifeSpan+ " years"
-            binding.indoorView.text = "Indoor: " + cat.indoor
-            binding.lapView.text = "Lap: " + cat.lap
+            binding.indoorView.text = "Indoor: " + (cat.indoor != 0)
+            binding.lapView.text = "Lap: " + (cat.lap !=0)
             binding.altNamesView.text = "Alt names: " + cat.altNames
-            binding.adaptabilityView.text = "adaptability: " + cat.adaptability
-            binding.affectionLevelView.text = "Affection: " + cat.affectionLevel
-            binding.childFriendlyView.text = "Child friendly: " + cat.childFriendly
-            binding.dogFriendlyView.text = "Dog friendly: " + cat.dogFriendly
-            binding.energyLevelView.text = "Energy level: " + cat.energyLevel
-            binding.groomingView.text = "Grooming: " +cat.grooming
-            binding.healthIssuesView.text = "Health Issues: " + cat.healthIssues
-            binding.intelligenceView.text = "Intelligence: " + cat.intelligence
-            binding.sheddingLevelView.text = "Shedding level: " + cat.shedding_level
-            binding.socialNeedsView.text = "Social needs: " + cat.social_needs
-            binding.strangerFriendlyView.text = "Stranger friendly: " + cat.dogFriendly
-            binding.vocalisationView.text = "Vocalisation: " + cat.vocalisation
-            binding.experimentalView.text = "Experimental: " + cat.experimental
-            binding.hairlessView.text = "Hairless: " + cat.hairless
-            binding.naturalView.text = "Natural: " + cat.natural
-            binding.rareView.text = "Rare: " + cat.rare
-            binding.rexView.text = "Rex: " + cat.rex
-            binding.suppressedTailView.text = "Suppressed tail: " + cat.suppressedTail
-            binding.shortLegsView.text = "Short legs: " + cat.shortLegs
+            binding.adaptabilityView.text = "adaptability: " + cat.adaptability +"/5"
+            binding.affectionLevelView.text = "Affection: " + cat.affectionLevel +"/5"
+            binding.childFriendlyView.text = "Child friendly: " + cat.childFriendly +"/5"
+            binding.dogFriendlyView.text = "Dog friendly: " + cat.dogFriendly +"/5"
+            binding.energyLevelView.text = "Energy level: " + cat.energyLevel +"/5"
+            binding.groomingView.text = "Grooming: " +cat.grooming +"/5"
+            binding.healthIssuesView.text = "Health Issues: " + cat.healthIssues +"/5"
+            binding.intelligenceView.text = "Intelligence: " + cat.intelligence +"/5"
+            binding.sheddingLevelView.text = "Shedding level: " + cat.shedding_level +"/5"
+            binding.socialNeedsView.text = "Social needs: " + cat.social_needs +"/5"
+            binding.strangerFriendlyView.text = "Stranger friendly: " + cat.dogFriendly +"/5"
+            binding.vocalisationView.text = "Vocalisation: " + cat.vocalisation +"/5"
+            binding.experimentalView.text = "Experimental: " + (cat.experimental !=0)
+            binding.hairlessView.text = "Hairless: " + (cat.hairless !=0)
+            binding.naturalView.text = "Natural: " + (cat.natural !=0)
+            binding.rareView.text = "Rare: " + (cat.rare !=0)
+            binding.rexView.text = "Rex: " + (cat.rex !=0)
+            binding.suppressedTailView.text = "Suppressed tail: " + (cat.suppressedTail !=0)
+            binding.shortLegsView.text = "Short legs: " + (cat.shortLegs !=0)
             binding.wikipediaUrlView.text = "Wikipedia url: " + cat.wikipediaUrl
-            binding.hypoallergenicView.text = "Hypoallergenic: " + cat.hypoallergenic
-
-
+            binding.hypoallergenicView.text = "Hypoallergenic: " + (cat.hypoallergenic != 0)
         }
     }
 }
